@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height:200px;
+            background:black;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            
+        }
+        .small-box {
+            height:75px;
+            background:yellowgreen;
+            width:75px;
+        }
+        /*
+        @media (max-width:500px) and (min-width:300px){
+            .small-box {
+                background:rgb(194, 70, 194);
+            }
+        } */
+
+        @media (max-width:250px) {
+            .box {
+                flex-direction: column;
+                flex-wrap:nowrap;
+            }
+
+            .small-box {
+            height:50px;
+            background:yellowgreen;
+            width:50px;
+            margin:5px 0;
+        }
+        }
+
+
+        @media print {
+            .small-box {
+                background:lightsalmon;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Media queries</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, nulla.</p>
+    <div class="box">
+        <div class="small-box"></div>
+        <div class="small-box"></div>
+        <div class="small-box"></div>
+    </div>
+
+</body>
+</html>
