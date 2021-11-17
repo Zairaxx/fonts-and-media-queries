@@ -13,21 +13,21 @@
             justify-content: space-around;
             align-items: center;
             flex-wrap: wrap;
-            
         }
+        
         .small-box {
             height:75px;
             background:yellowgreen;
             width:75px;
         }
-        /*
+        
         @media (max-width:500px) and (min-width:300px){
             .small-box {
                 background:rgb(194, 70, 194);
             }
-        } */
+        }
 
-        @media (max-width:250px) {
+        @media (min-width:250px) {
             .box {
                 flex-direction: column;
                 flex-wrap:nowrap;
@@ -38,7 +38,20 @@
             background:yellowgreen;
             width:50px;
             margin:5px 0;
-        }
+            }
+            
+            h1 {
+                font-size: 18px;
+                text-align: center;
+                text-decoration: underline;
+            }
+
+            p {
+                font-size:14px;
+                color:maroon;
+                letter-spacing:2px;
+            }
+        
         }
 
 
